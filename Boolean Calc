@@ -1,17 +1,28 @@
 print("Welcome to my calculator")
-Loop = true
+z = 1
 Result = 0
 
-While loop = true:
-    Number = float(input("Please input your first number"))
-    calc = str(input("Please enter your method of your calculation
-    + for addition, - for subtraction, * for multiplication & / for division"))
-    if calc == +:
-        Number_2 = float(input("Please enter your second number"))
+while z == 1:
+    Number = float(input("Please input your first number "))
+    calc = int(input("""
+Please enter your method of your calculation:
+1 for addition, 2 for subtraction, 3 for multiplication & 4 for division
+    """))
+    if calc == 1:
+        Number_2 = float(input("Please enter your second number "))
         Result = Number + Number_2
-    if calc == -:
-        Number_2 = float(input("Please enter your second number"))
+    if calc == 2:
+        Number_2 = float(input("Please enter your second number "))
         Result = Number - Number_2
-    if calc == *:
-        Number_2 = float(input("Please enter your second number"))
-        
+    if calc == 3:
+        Number_2 = float(input("Please enter your second number "))
+        Result = Number - Number_2
+    if calc == 4:
+        Number_2 = float(input("Please enter your second number "))
+        Result = Number - Number_2
+    print(float(Result))
+    stop_cue = int(input("Please enter -1 to end program, 0 to continue "))
+    if stop_cue == -1:
+        z = 0
+    elif stop_cue == 0:
+        z = 1
