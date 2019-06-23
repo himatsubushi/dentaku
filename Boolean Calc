@@ -1,0 +1,17 @@
+print("Welcome to my calculator")
+Loop = true
+Result = 0
+
+While loop = true:
+    Number = float(input("Please input your first number"))
+    calc = str(input("Please enter your method of your calculation
+    + for addition, - for subtraction, * for multiplication & / for division"))
+    if calc == +:
+        Number_2 = float(input("Please enter your second number"))
+        Result = Number + Number_2
+    if calc == -:
+        Number_2 = float(input("Please enter your second number"))
+        Result = Number - Number_2
+    if calc == *:
+        Number_2 = float(input("Please enter your second number"))
+        
