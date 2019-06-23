@@ -1,11 +1,11 @@
 import java.util.*;
 
 public class Calculator {
-int firstNum;
-String operator;
-int secondNum;
-boolean continue;
-int output;
+static int firstNum;
+static String operator;
+static int secondNum;
+static boolean Continue;
+static int output;
 
 public static void main(String args[]) {
 Scanner kB = new Scanner(System.in);
@@ -13,10 +13,10 @@ System.out.println("Welcome to the calculator. Press Q to quit or enter to conti
 String response;
 response = kB.next();
 if(response.equalsIgnoreCase("q"))
-  continue = false;
+  Continue = false;
 else
-  continue = true;
-while(continue) {
+  Continue = true;
+while(Continue) {
 System.out.println("Please enter your first number.");
 firstNum = kB.nextInt();
 System.out.println("Please enter your operator (+ for addition, - for subtraction, * for multiplication, / for division).");
@@ -24,21 +24,22 @@ operator = kB.next();
 System.out.println("Please enter your second number.");
 secondNum = kB.nextInt();
 
-if(operator.equals("+")
+if(operator.equals("+"))
   output=firstNum+secondNum;
-elseif(operator.equals("-")
+else if(operator.equals("-"))
   output=firstNum-secondNum;
-elseif(operator.equals("*")
+else if(operator.equals("*"))
   output=firstNum*secondNum;
-elseif(operator.equals("/")
+else if(operator.equals("/"))
   output=firstNum/secondNum;
  
-System.out.println("Your result is: " + output ".");
+System.out.println("Your result is: " + output + ".");
 System.out.println("Press any key to continue or Q to quit");
+response = kB.next();
 if(response.equalsIgnoreCase("q"))
-  continue = false;
+  Continue = false;
 else
-  continue = true;
+  Continue = true;
 }
 
 System.out.println("Thank you for using the calculator");
